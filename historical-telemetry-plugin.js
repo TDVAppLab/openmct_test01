@@ -9,15 +9,11 @@ function HistoricalTelemetryPlugin() {
                 return domainObject.type === 'example.telemetry';
             },
             request: function (domainObject, options) {
-                var url = '/history/' +
-                    domainObject.identifier.key +
-                    '?start=' + options.start +
-                    '&end=' + options.end;
-                    
-                console.log(url);
+                var url = 'https://api.wheretheiss.at/v1/satellites/25544';
     
                 return http.get(url)
                     .then(function (resp) {
+                        console.log(resp.data);
                         return resp.data;
                     });
             }

@@ -1,25 +1,25 @@
 {
-    "name": "Example Spacecraft",
+    "name": "Example",
     "key": "sc",
     "measurements": [
         {
-            "name": "Generator Voltage",
+            "name": "Iss Altitude",
             "key": "pwr.v",
             "values": [
                 {
-                    "key": "value",
-                    "name": "Value",
-                    "units": "Volts",
+                    "key": "altitude",
+                    "name": "Altitude",
+                    "units": "kirometer",
                     "format": "float",
                     "hints": {
                         "range": 1
                     }
                 },
                 {
-                    "key": "utc",
+                    "key": "timestamp",
                     "source": "timestamp",
                     "name": "Timestamp",
-                    "format": "utc",
+                    "format": "float",
                     "hints": {
                         "domain": 1
                     }
